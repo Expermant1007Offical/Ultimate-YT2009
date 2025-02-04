@@ -1128,7 +1128,7 @@ var PHILIPS = {
 			} else {
 				if (0 < a.feed.openSearch$totalResults.$t)
 					for (f = 0; f < a.feed.entry.length; f++)
-						e = a.feed.entry[f].title.$t, d = "http://192.168.1.184/feeds/api/users/" + e + "?alt=json", b.push([d, e]);
+						e = a.feed.entry[f].title.$t, d = "http://10.0.0.70/feeds/api/users/" + e + "?alt=json", b.push([d, e]);
 				else
 					$("overlay_error").textContent = "There are no " + c + " in user " + PHILIPS.USERNAME + "'s account", $("overlay_error").style.display =
 						"block";
@@ -1238,7 +1238,7 @@ var PHILIPS = {
 			c = $("currentCategory"),
 			b = $("timeFilter").value,
 			d = $("startIndex").value,
-			e = "http://192.168.1.184/feeds/api/standardfeeds/";
+			e = "http://10.0.0.70/feeds/api/standardfeeds/";
 			"" !== PHILIPS.LOCALE_CODE && (e += PHILIPS.LOCALE_CODE + "/");
 			e += escape(a.value);
 			"All" != c.value && (e += escape("_" + c.value));
@@ -1442,7 +1442,7 @@ var PHILIPS = {
 			c = [];
 			b = a.category;
 			for (e = 0; e < b.length; e++)
-				 - 1 == b[e].term.indexOf("http://192.168.1.184/") &&
+				 - 1 == b[e].term.indexOf("http://10.0.0.70/") &&
 				b[e].term != j.textContent && c.push(b[e].term);
 			for (e = 0; 5 > e && e < c.length; )
 				$("tag" + e).textContent = c[e], $("tag" + e).href = "index.php?tag=" + c[e], e++;
