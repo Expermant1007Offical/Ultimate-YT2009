@@ -1,5 +1,7 @@
-# yt2009
-a fairly accurate 2009 youtube frontend.
+# Ultimate YT2009
+A fairly accurate 2009 youtube frontend.
+With Old Youtube Versions Revivals.
+Revivals Like YouTube XL, YouTube Flash Players, YouTube Leanback, YouTube Leanback V3, Youtube WiiTV, etc.
 
 <img src="doc-imgs/ie6-ss.png" width="400">
 <img src="doc-imgs/ie6-ss2.png" width="400">
